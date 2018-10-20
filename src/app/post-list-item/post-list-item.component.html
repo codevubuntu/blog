@@ -1,0 +1,13 @@
+<li [ngClass]="{'list-group-item':true, 
+		'list-group-item-success':lik > 0 ,
+		'list-group-item-danger':lik < 0 }">
+	
+	<div style="float: right ; "> {{ dt | date : 'short' }} </div>
+	<h2>{{ tit }} </h2>
+	<p> {{ cnt }} </p>
+	<button class="btn btn-sucess" (click)="like()">Love It</button>
+	&nbsp;
+	<button class="btn btn-danger" (click)="dislike()">Don't love it</button>
+	
+</li>
+
